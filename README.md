@@ -59,3 +59,8 @@ Or select your preferred variant in **Settings (`Cmd+,`) → Look**.
 ## Default Layout
 
 All variations use Herdr's native semantic tokens (`canvas`, `background`, `surface`, `chrome`, `border`, `accent`, etc.) to style Herdr seamlessly on its default layout (`main`) without requiring custom layout overrides or extra configuration.
+
+## License
+
+[Apache-2.0](LICENSE)
+
