@@ -38,6 +38,13 @@ Modernized Gruvbox themes with 3 contrast variations (hard, medium, soft) across
   - `icons-mono/`: Clean single-path monochrome vector glyphs for AI models.
   - `programs.json`: Overrides AI model programs with `tint: true`.
 
+## Watch out
+
+- **Do NOT create or modify any layout files (`layouts/*.json`):** This theme suite is designed exclusively for Herdr's default layout (`main`) using standard semantic tokens. Modifying shipped layouts (`main.json`, `terminals.json`, `win98.json`) causes Herdr to detect edits and create unwanted `-edited` layouts (e.g. `terminals-edited.json`).
+- Only copy theme files into `~/.config/herdr-app/themes/` and icon definitions into `~/.config/herdr-app/icons-mono/` and `~/.config/herdr-app/programs.json`.
+- Terminal black (`ansi0`) is kept at `#3c3836` rather than `#1d2021` so black text in terminal outputs remains clearly readable against the buffer background.
+- Floats and sidebars use `#161819` for depth against the `#1d2021` buffer; flattening them to the same hex loses the visual hierarchy.
+
 ## Done when
 
 1. Theme files exist in `themes/` and install cleanly to `~/.config/herdr-app/themes/`.
@@ -49,4 +56,4 @@ Modernized Gruvbox themes with 3 contrast variations (hard, medium, soft) across
    - `herdr-app do app.theme --name gruvbox-light-medium`
    - `herdr-app do app.theme --name gruvbox-light-soft`
 3. Copying `icons-mono/` and `programs.json` into `~/.config/herdr-app/` renders all AI models with theme-tinted monochrome icons.
-4. No custom layout files or overrides are needed.
+4. No layout files exist in this repository, and no custom or `-edited` layouts are generated in Herdr.

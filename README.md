@@ -18,7 +18,19 @@ Includes 3 contrast variations (hard, medium, soft) for both dark and light mode
 
 ## Installation
 
-### Themes
+### Via Herdr Agent
+
+In any Herdr terminal, prompt your agent:
+
+```text
+Add the Herdr theme from github.com/Codesmith28/gruvbox-herdr-app
+```
+
+The agent will read `RECIPE.md` and copy the theme files and monochrome icon assets directly into `~/.config/herdr-app/`.
+
+### Manual Installation
+
+#### 1. Themes
 
 Copy the theme files into your Herdr themes directory:
 
@@ -27,7 +39,7 @@ git clone https://github.com/Codesmith28/gruvbox-herdr-app.git
 cp gruvbox-herdr-app/themes/*.json ~/.config/herdr-app/themes/
 ```
 
-### Monochrome Icons
+#### 2. Monochrome Icons (Optional)
 
 By default, developer tools like Neovim, Vim, Git, and Shell use monochrome icons tinted to theme text colors, while AI model icons (Claude, Gemini, Antigravity, Codex, Amp, Crush, Kimi, Kiro, Pig) render in hardcoded brand colors.
 
