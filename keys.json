@@ -1,0 +1,8 @@
+{
+  "global": {
+    "ctrl-alt-g": "mod.open:gruvbox"
+  },
+  "terminal": {
+    "ctrl-alt-g": "mod.open:gruvbox"
+  }
+}
